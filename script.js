@@ -26,5 +26,6 @@ function sendJSON(){
             //var data = JSON.stringify({ "description": description.value, "color": color.value, "size":size.value, "price":price.value }); 
   
             // Sending data with the request 
-            console.log(xhr.send()); 
+            var response = xhr.send();
+            console.log(response.name); 
         } 
